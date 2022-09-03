@@ -4,7 +4,7 @@ variable "eks_cluster_version" {
 }
 
 variable "helm_config" {
-  description = "Cluster Autoscaler Helm Config"
+  description = "GateKeeper Helm Config"
   type        = any
   default     = {}
 }
