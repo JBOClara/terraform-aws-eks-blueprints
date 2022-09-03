@@ -995,6 +995,19 @@ variable "external_secrets_secrets_manager_arns" {
   default     = ["arn:aws:secretsmanager:*:*:secret:*"]
 }
 
+#-----------Gatekeeper ADDON-------------
+variable "enable_gatekeeper" {
+  description = "Enable Gatekeeper add-on"
+  type        = bool
+  default     = false
+}
+
+variable "gatekeeper_helm_config" {
+  description = "Gatekeeper add-on config"
+  type        = any
+  default     = {}
+}
+
 #-----------Grafana ADDON-------------
 variable "enable_grafana" {
   description = "Enable Grafana add-on"
